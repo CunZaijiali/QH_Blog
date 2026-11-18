@@ -1,0 +1,54 @@
+/* ============================================================
+   字体方案
+   正文：无衬线（英文系统字体 + 中文黑体）
+   标题：衬线（英文衬线 + 中文宋体/思源宋体）
+   代码：Nerd Font 等宽 + 中文黑体回退
+   ============================================================ */
+
+:root {
+  --font-sans: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial,
+               "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+
+  --font-serif: Georgia, "Times New Roman", "Noto Serif CJK SC", "Source Han Serif SC",
+                "Songti SC", SimSun, serif;
+
+  --font-mono: "NerdCode", "JetBrainsMono Nerd Font", "JetBrains Mono", "Fira Code",
+               "Cascadia Code", Consolas, "Microsoft YaHei", "PingFang SC",
+               "Noto Sans CJK SC", monospace;
+}
+
+@font-face {
+  font-family: "NerdCode";
+  src: url("/fonts/JetBrainsMonoNerdFont-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.entry-title,
+.archive-entry-title,
+.home-info h1,
+.profile_inner h1 {
+  font-family: var(--font-serif);
+}
+
+code, pre, kbd, samp,
+.highlight,
+.chroma {
+  font-family: var(--font-mono);
+}
+
+pre code {
+  font-size: 0.9em;
+  line-height: 1.6;
+}
+
+p code, li code, td code {
+  font-size: 0.9em;
+}
