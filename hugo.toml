@@ -1,0 +1,78 @@
+baseURL = "https://cun-zai.vip/"
+locale = "zh-CN"
+defaultContentLanguage = "zh"
+title = "CunZai"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = false
+
+[pagination]
+  pagerSize = 10
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  env = "production"
+  description = "记录技术、阅读与生活"
+  author = "CunZai"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+  TocOpen = false
+  comments = false
+  mainSections = ["posts"]
+
+  [params.homeInfoParams]
+    Title = "你好，我是 CunZai"
+    Content = "这里记录技术笔记、阅读与生活。基于 Hugo + PaperMod 构建。"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "about"
+  name = "关于"
+  url = "/about/"
+  weight = 40
+
