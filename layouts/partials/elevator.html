@@ -1,0 +1,7 @@
+{{- if .Param "ShowToc" -}}
+{{- with .TableOfContents -}}
+<aside class="elevator" aria-label="目录">
+    {{ . }}
+</aside>
+{{- end -}}
+{{- end -}}

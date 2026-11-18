@@ -1,12 +1,19 @@
 baseURL = "https://cun-zai.vip/"
 locale = "zh-CN"
 defaultContentLanguage = "zh"
-title = "CunZai"
+title = "CunZai1069 Blogs"
 theme = "PaperMod"
+
+buildDrafts = true
+buildExpired = true
+buildFuture = false
 
 enableRobotsTXT = true
 enableEmoji = true
-enableGitInfo = false
+enableGitInfo = true
+enableMissingTranslationPlaceholders = true
+
+ShowToc = true
 
 [pagination]
   pagerSize = 10
@@ -16,6 +23,11 @@ enableGitInfo = false
     unsafe = true
   [markup.highlight]
     noClasses = false
+  [markup.goldmark.extensions.passthrough]
+    enable = true
+  [markup.goldmark.extensions.passthrough.delimiters]
+    block  = [['\[', '\]'], ['$$', '$$']]
+    inline = [['\(', '\)'], ['$', '$']]
 
 [permalinks]
   posts = "/posts/:year/:month/:slug/"
@@ -30,10 +42,10 @@ enableGitInfo = false
 [params]
   env = "production"
   description = "记录技术、阅读与生活"
-  author = "CunZai"
+  author = "CunZai1069"
   defaultTheme = "auto"
   ShowReadingTime = true
-  ShowShareButtons = false
+  ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
@@ -45,8 +57,8 @@ enableGitInfo = false
   mainSections = ["posts"]
 
   [params.homeInfoParams]
-    Title = "你好，我是 CunZai"
-    Content = "这里记录技术笔记、阅读与生活。基于 Hugo + PaperMod 构建。"
+    Title = "CunZai1069"
+    Content = "笔记归档。基于 Hugo + PaperMod 构建。"
 
   [[params.socialIcons]]
     name = "rss"
@@ -76,5 +88,18 @@ enableGitInfo = false
   url = "/about/"
   weight = 40
 
+[[menu.footer]]
+identifier = "concat"
+name = "concat"
+weight = 10
 
 
+[languages]
+  [languages.zh]
+    languageName = "简中"
+    weight = 1
+    title = "CunZai1069"
+  [language.en]
+    languageName = "English"
+    weight = 2
+    title = "CunZai1069"

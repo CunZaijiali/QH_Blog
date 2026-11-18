@@ -1,0 +1,15 @@
+.elevator {
+  position: fixed;
+  top: 120px;
+  right: 24px;
+  width: 220px;
+  max-height: 70vh;
+  overflow: auto;
+  padding: 12px;
+  font-size: .85rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--entry);
+}
+.elevator ul { list-style: none; padding-left: .8rem; }
+@media (max-width: 1200px) { .elevator { display: none; } }
