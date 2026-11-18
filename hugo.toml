@@ -1,5 +1,5 @@
 baseURL = "https://cun-zai.vip/"
-languageCode = "zh-cn"
+locale = "zh-CN"
 defaultContentLanguage = "zh"
 title = "CunZai"
 theme = "PaperMod"
@@ -75,5 +75,6 @@ enableGitInfo = false
   name = "关于"
   url = "/about/"
   weight = 40
+
 
 
