@@ -69,6 +69,11 @@ ShowToc = true
   name = "文章"
   url = "/posts/"
   weight = 10
+[[menu.main]]
+  identifier = "docs"
+  name = "文档"
+  url = "/docs/"
+  weight = 15
 
 [[menu.main]]
   identifier = "tags"
@@ -103,3 +108,4 @@ weight = 10
     languageName = "English"
     weight = 2
     title = "CunZai1069"
+
